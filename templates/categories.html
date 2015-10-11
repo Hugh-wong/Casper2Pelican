@@ -1,8 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<ul>
-{% for category, articles in categories %}
-    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
-{% endfor %}
-</ul>
+<main id="content" class="content" role="main">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <header class="post-header">
+
+        </header>
+        <section class="post-content">
+            <ul>
+            {% for category, articles in categories %}
+                <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+            {% endfor %}
+            </ul>
+        </section>
+        <footer class="post-footer">
+        </footer>
+    </article>
+</main>
 {% endblock %}

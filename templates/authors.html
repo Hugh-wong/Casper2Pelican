@@ -3,7 +3,7 @@
 {% block content %}
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
-        <h1 class="post-title" itemprop="headline">Authors on {{ SITENAME }}</h1>       
+        <h1 class="post-title" itemprop="headline">Authors on {{ SITENAME }}</h1>
     </header>
     <section class="post-content">
         <div itemprop="text">
@@ -21,9 +21,6 @@
                 {% endfor %}
             </ul>
         </div>
-        <hr>
-{% include 'donate.html' %}
     </section>
-        {% include 'ads.html' %}
 </article>
 {% endblock %}

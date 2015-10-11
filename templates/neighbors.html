@@ -1,13 +1,13 @@
 <nav class="pagination" role="navigation">
     <ul>
         {% if article.next_article %}
-        <a rel="prev" class="newer-posts" href="{{ SITEURL }}/{{ article.next_article.url}}" title="Leer: {{ article.next_article.title }}">
-            Leer la nueva publicación
+        <a rel="prev" class="newer-posts" href="{{ SITEURL }}/{{ article.next_article.url}}" title="{{ article.next_article.title }}">
+            下一篇
         </a>
         {% endif %}
         {% if article.prev_article %}
-        <a rel="next" class="older-posts" href="{{ SITEURL }}/{{ article.prev_article.url}}" title="Leer: {{ article.prev_article.title }}">
-            Leer la próxima publicación
+        <a rel="next" class="older-posts" href="{{ SITEURL }}/{{ article.prev_article.url}}" title="{{ article.prev_article.title }}">
+            上一篇
         </a>
         {% endif %}
     </ul>
