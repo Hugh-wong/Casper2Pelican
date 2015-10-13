@@ -10,7 +10,7 @@
     <link rel="apple-touch-startup-image" href="{{ SITEURL }}/theme/images/logo.png">
     <link type="text/plain" rel="socialmedia" href="{{ SITEURL }}/socialmedia.txt">
     <link rel="dns-prefetch" href="{{ SITEURL }}"/>
-    <link rel="dns-prefetch" href="//www.gstatic.com"/>
+    <!--<link rel="dns-prefetch" href="//www.gstatic.com"/>
     <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
     <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
     <link rel="dns-prefetch" href="//accounts.google.com"/>
@@ -18,7 +18,7 @@
     <link rel="dns-prefetch" href="//www.google-analytics.com"/>
     <link rel="dns-prefetch" href="//googleads.g.doubleclick.net"/>
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/>
-    <link rel="dns-prefetch" href="//twemoji.maxcdn.com"/>
+    <link rel="dns-prefetch" href="//twemoji.maxcdn.com"/>-->
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -27,7 +27,7 @@
     <meta name="msapplication-tooltip" content="{{ TAG_LINE }}"/>
     <meta name="msapplication-window" content="width=1024;height=768"/>
     <meta name="msapplication-task" content="name={{ SITENAME }};action-uri=http:{{ SITEURL }};icon-uri={{ SITEURL }}/theme/images/favicon.ico"/>
-    <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png"/>
+    <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/favicon_120.png"/>
     <meta name="msapplication-TileColor" content="#1F1F21"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="imagetoolbar" content="no">
@@ -70,10 +70,10 @@
     <meta property="og:locale:alternate" content="{{ SITE_LANG_ALTERNATE }}">
     {% if article %}
     <link rel="canonical" href="{{ article.url }}">
-    <link rel="dns-prefetch" href="//disqus.com"/>
+    <!--<link rel="dns-prefetch" href="//disqus.com"/>
     <link rel="dns-prefetch" href="//a.disquscdn.com"/>
     <link rel="dns-prefetch" href="//{{ DISQUS_SITENAME }}.disqus.com"/>
-    <link rel="dns-prefetch" href="//glitter-services.disqus.com"/>
+    <link rel="dns-prefetch" href="//glitter-services.disqus.com"/>-->
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -108,8 +108,8 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:url" content="{{ page.url }}">
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
+    <meta property="og:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -125,8 +125,8 @@
     <meta property="og:url" content="{{ SITEURL }}">
     <meta property="og:description" content="{{ SITE_DESCRIPTION }}">
     <link rel="canonical" href="{{ SITEURL }}">
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
+    <meta property="og:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -139,8 +139,8 @@
     <meta name="dcterms.source" content="{{ SITEURL }}">
     <meta name="dcterms.publisher" content="{{ AUTHOR }}">
     {% if OPEN_GRAPH_IMAGE %}
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
+    <meta property="og:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
+    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/favicon_120.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -150,22 +150,18 @@
 {% if FEED_RSS %}
     <link href="{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed">
 {% endif %}
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/favicon_114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/favicon_120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/favicon_76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/favicon_60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/favicon_57.png">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon_96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon_16.png" sizes="16x16">
     <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
     <script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', '{{GOOGLE_ANALYTICS}}', 'auto');ga('send', 'pageview');var _qevents = _qevents || [];</script>
-    <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+    <!--<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>-->
 </head>
 <body class="home-template nav-closed" itemscope itemtype="http://schema.org/WebPage">
 <!-- Google Tag Manager -->
@@ -186,9 +182,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta itemprop="inLanguage" content="es">
     {% include 'navigation.html' %}
     <div class="site-wrapper">
-         <header class="main-header {% if article %}post-head{% endif %}{% if page %}post-head {% endif %}" style="background-image: url({{ SITEURL }}/theme/images/{% if article %}bear.jpg{% else %}banner-bg.jpg{% endif %})" itemscope itemtype="http://schema.org/WPHeader">
-        <!-- <header class="main-header" style="background-image: url({{SITEURL}}/theme/images/note.jpeg)"> -->
-        <!-- <header class="main-header" style="background-image: {% if article %}url({{SITEURL}}/images/{{article.image}}){%else%}url({{SITEURL}}/theme/images/bear.jpg){% endif %}"> -->
+         <!--<header class="main-header {% if article %}post-head{% endif %}{% if page %}post-head {% endif %}" style="background-image: url({{ SITEURL }}/theme/images/{% if article %}bear.jpg{% else %}banner-bg.jpg{% endif %})" itemscope itemtype="http://schema.org/WPHeader">-->
+         <header class="main-header {% if article or page %}post-head{% endif %}" style="background-image: url({{SITEURL}}/theme/images/background.jpg)"> 
             <nav class="main-nav overlay clearfix">
                 <a class="menu-button" href="#">
                     <span class="burger">&#9776;</span>
@@ -218,6 +213,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.fitvids.min.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/index.min.js"></script>
-    <script>twemoji.parse(document, {"size":16});</script>
+    <!--<script>twemoji.parse(document, {"size":16});</script>-->
 </body>
 </html>
